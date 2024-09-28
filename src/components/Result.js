@@ -5,7 +5,7 @@ export default function Result() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const { score, total } = location.state || { score: 0, total: 0 };
+  const { score } = location.state || { score: 0 };
 
   const handleBackToCategories = () => {
     navigate("/");

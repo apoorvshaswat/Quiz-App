@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 import quizData from "./QuizData";
@@ -22,7 +22,19 @@ export default function Quiz() {
     } else {
       navigate("/");
     }
-  }, [quizId]);
+  }, [quizId, navigate]);
+
+  const handleNextQuestion = useCallback(() => {
+    setSelectedOption(null);
+    setCorrectAnswer(null);
+
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setTime(60);
+    } else {
+      navigate("/result", { state: { score } });
+    }
+  }, [currentQuestionIndex, questions.length, navigate, score]);
 
   useEffect(() => {
     if (time > 0) {
@@ -33,19 +45,7 @@ export default function Quiz() {
     } else {
       handleNextQuestion();
     }
-  }, [time]);
-
-  const handleNextQuestion = () => {
-    setSelectedOption(null);
-    setCorrectAnswer(null);
-
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setTime(60);
-    } else {
-      navigate("/result", { state: { score } });
-    }
-  };
+  }, [time, handleNextQuestion]);
 
   const handleAnswer = (selectedOption) => {
     setSelectedOption(selectedOption);
