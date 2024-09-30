@@ -241,7 +241,7 @@ const quizData = [
     category: "Physics",
     quizzes: [
       {
-        id: 1,
+        id: 7,
         title: "Fundamental Physics Quiz",
         difficulty: "Easy",
         questions: [
@@ -273,7 +273,7 @@ const quizData = [
         ],
       },
       {
-        id: 2,
+        id: 8,
         title: "Thermodynamics Quiz",
         difficulty: "Medium",
         questions: [
@@ -314,200 +314,6 @@ const quizData = [
               "Thermal Energy",
             ],
             answer: "Mechanical Energy",
-          },
-        ],
-      },
-      {
-        id: 3,
-        title: "Waves and Optics Quiz",
-        difficulty: "Hard",
-        questions: [
-          {
-            question: "What is the frequency of a wave?",
-            options: [
-              "The number of waves per second",
-              "The height of a wave",
-              "The distance between waves",
-              "The speed of a wave",
-            ],
-            answer: "The number of waves per second",
-          },
-          {
-            question: "What phenomenon explains the bending of light?",
-            options: [
-              "Reflection",
-              "Refraction",
-              "Diffraction",
-              "Interference",
-            ],
-            answer: "Refraction",
-          },
-          {
-            question: "What is the speed of light?",
-            options: [
-              "300,000 km/s",
-              "150,000 km/s",
-              "1,000 km/s",
-              "3,000 km/s",
-            ],
-            answer: "300,000 km/s",
-          },
-          {
-            question: "What is the range of visible light?",
-            options: ["380-750 nm", "400-700 nm", "500-800 nm", "600-900 nm"],
-            answer: "380-750 nm",
-          },
-          {
-            question: "What type of wave is sound?",
-            options: [
-              "Longitudinal",
-              "Transverse",
-              "Surface",
-              "Electromagnetic",
-            ],
-            answer: "Longitudinal",
-          },
-        ],
-      },
-      {
-        id: 4,
-        title: "Classical Mechanics Quiz",
-        difficulty: "Easy",
-        questions: [
-          {
-            question: "What is Newton's second law?",
-            options: ["F = ma", "v = d/t", "E = mc²", "p = mv"],
-            answer: "F = ma",
-          },
-          {
-            question: "What does inertia refer to?",
-            options: [
-              "Resistance to change in motion",
-              "Force acting on an object",
-              "Mass of an object",
-              "Energy of an object",
-            ],
-            answer: "Resistance to change in motion",
-          },
-          {
-            question: "What is momentum?",
-            options: [
-              "Mass times velocity",
-              "Mass times acceleration",
-              "Force times time",
-              "Energy divided by time",
-            ],
-            answer: "Mass times velocity",
-          },
-          {
-            question: "What is gravitational force?",
-            options: [
-              "Attractive force between two masses",
-              "Force due to friction",
-              "Centripetal force",
-              "Electromagnetic force",
-            ],
-            answer: "Attractive force between two masses",
-          },
-          {
-            question: "What is the unit of force?",
-            options: ["Newton", "Joule", "Pascal", "Watt"],
-            answer: "Newton",
-          },
-        ],
-      },
-      {
-        id: 5,
-        title: "Modern Physics Quiz",
-        difficulty: "Medium",
-        questions: [
-          {
-            question: "What is the theory of relativity?",
-            options: [
-              "Theory of space and time",
-              "Theory of electromagnetism",
-              "Theory of quantum mechanics",
-              "Theory of classical mechanics",
-            ],
-            answer: "Theory of space and time",
-          },
-          {
-            question: "What is the fundamental particle of light?",
-            options: ["Photon", "Electron", "Neutron", "Proton"],
-            answer: "Photon",
-          },
-          {
-            question: "What is the uncertainty principle?",
-            options: [
-              "Limit of measuring position and momentum",
-              "Limit of measuring energy and time",
-              "Limit of measuring speed and direction",
-              "Limit of measuring mass and velocity",
-            ],
-            answer: "Limit of measuring position and momentum",
-          },
-          {
-            question: "What is the speed of light in vacuum?",
-            options: [
-              "300,000 km/s",
-              "150,000 km/s",
-              "1,000,000 km/s",
-              "500,000 km/s",
-            ],
-            answer: "300,000 km/s",
-          },
-          {
-            question: "What is quantum entanglement?",
-            options: [
-              "Connection between particles at a distance",
-              "Transfer of energy between particles",
-              "Absorption of light by particles",
-              "Collision of particles",
-            ],
-            answer: "Connection between particles at a distance",
-          },
-        ],
-      },
-      {
-        id: 6,
-        title: "Electricity and Magnetism Quiz",
-        difficulty: "Hard",
-        questions: [
-          {
-            question: "What is the unit of electric charge?",
-            options: ["Coulomb", "Volt", "Ohm", "Ampere"],
-            answer: "Coulomb",
-          },
-          {
-            question: "What is Ohm's law?",
-            options: ["V = IR", "E = mc²", "F = ma", "P = IV"],
-            answer: "V = IR",
-          },
-          {
-            question: "What does a capacitor do?",
-            options: [
-              "Stores electric charge",
-              "Resists current",
-              "Produces electromagnetic fields",
-              "Converts energy",
-            ],
-            answer: "Stores electric charge",
-          },
-          {
-            question:
-              "What is the magnetic field around a current-carrying wire?",
-            options: ["Circular", "Linear", "Conical", "Square"],
-            answer: "Circular",
-          },
-          {
-            question: "What is the principle behind electric generators?",
-            options: [
-              "Electromagnetic induction",
-              "Friction",
-              "Heat transfer",
-              "Chemical reaction",
-            ],
-            answer: "Electromagnetic induction",
           },
         ],
       },
