@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 export default function Timer() {
@@ -7,9 +7,9 @@ export default function Timer() {
 
   const [time, setTime] = useState(5);
 
-  const handleQuizSelect = () => {
+  const handleQuizSelect = useCallback(() => {
     navigate(`/quiz/${quizId}`);
-  };
+  }, [navigate, quizId]);
 
   useEffect(() => {
     if (time > 0) {

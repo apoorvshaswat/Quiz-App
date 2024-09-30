@@ -1,6 +1,7 @@
-import "./output.css";
-import Header from "./components/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./output.css";
+
+import Header from "./components/Header";
 import Main from "./components/Main";
 import Category from "./components/Category";
 import Quiz from "./components/Quiz";
