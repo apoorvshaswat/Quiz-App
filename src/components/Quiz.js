@@ -118,12 +118,12 @@ export default function Quiz() {
         />
         <div className="text-center justify-center items-center">{score}</div>
       </div>
-      <div className="bg-yellow-300 h-screen flex flex-col justify-center items-center p-4 md:p-10">
+      <div className="bg-yellow-300 h-screen flex flex-col justify-center items-center p-4 pt-10 md:p-10">
         {currentQuestionIndex < questions.length ? (
           <div className="flex flex-col justify-center items-center gap-5 border-8 border-white-500 rounded-lg p-5 bg-yellow-400 w-full md:w-2/3 lg:w-1/2">
-            <div className="pt-5 text-lg md:text-xl">
+            <div className="pt-2 text-lg md:text-xl">
               <div>Time Remaining</div>
-              <div className="text-center pt-2">{time}</div>
+              <div className="text-center pt-2 pb-2 w-1/2 border-black  border-2 rounded-full justify-center items-center ml-10 mt-5 ">{time}</div>
             </div>
             <div className="pt-2 text-lg md:text-xl">
               <p>{`Question ${currentQuestionIndex + 1} of ${

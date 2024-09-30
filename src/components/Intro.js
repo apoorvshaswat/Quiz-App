@@ -33,7 +33,7 @@ export default function Intro() {
       <div className="text-xl md:text-2xl">{questions.length} Questions</div>
       <div className="w-full md:w-1/2 flex items-center justify-center h-20 py-5">
         <button
-          className="text-3xl md:text-4xl bg-blue-400 rounded-lg w-full md:w-1/2 py-4"
+          className="text-3xl md:text-4xl bg-blue-400 rounded-lg w-1/2 md:w-1/2 py-4"
           onClick={() => navigate(`/timer/${quizId}`)}
         >
           Play
