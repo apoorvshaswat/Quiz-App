@@ -5,7 +5,7 @@ import quizData from "../data/QuizData";
 export default function Intro() {
   const navigate = useNavigate();
   const { quizId } = useParams();
-  
+
   const [title, setTitle] = useState();
   const [difficulty, setDifficulty] = useState();
   const [questions, setQuestions] = useState([]);

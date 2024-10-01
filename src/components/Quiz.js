@@ -123,7 +123,9 @@ export default function Quiz() {
           <div className="flex flex-col justify-center items-center gap-5 border-8 border-white-500 rounded-lg p-5 bg-yellow-400 w-full md:w-2/3 lg:w-1/2">
             <div className="pt-2 text-lg md:text-xl">
               <div>Time Remaining</div>
-              <div className="text-center pt-2 pb-2 w-1/2 border-black  border-2 rounded-full justify-center items-center ml-10 mt-5 ">{time}</div>
+              <div className="text-center pt-2 pb-2 w-1/2 border-black  border-2 rounded-full justify-center items-center ml-10 mt-5 ">
+                {time}
+              </div>
             </div>
             <div className="pt-2 text-lg md:text-xl">
               <p>{`Question ${currentQuestionIndex + 1} of ${
@@ -142,12 +144,12 @@ export default function Quiz() {
                     selectedOption
                       ? selectedOption === option
                         ? option === questions[currentQuestionIndex].answer
-                          ? "bg-green-500" // Selected and correct
-                          : "bg-red-500" // Selected and incorrect
+                          ? "bg-green-500"
+                          : "bg-red-500"
                         : option === questions[currentQuestionIndex].answer
-                        ? "bg-green-500" // Highlight correct answer after selection
+                        ? "bg-green-500"
                         : "bg-white"
-                      : "bg-white" // No selection made yet, keep default white
+                      : "bg-white"
                   }`}
                 >
                   {`${index + 1}. ${option}`}
