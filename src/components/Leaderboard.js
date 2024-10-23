@@ -59,7 +59,7 @@ export default function Leaderboard() {
       )}
 
       <button
-        className="mt-5 h-12 w-full max-w-xs border-white bg-yellow-300 p-2 rounded-lg text-center"
+        className="mt-5 h-12 md:w-1/3 w-1/2 border-white bg-yellow-300 p-2 rounded-lg text-center"
         onClick={handleQuizSelect}
       >
         Back to Result

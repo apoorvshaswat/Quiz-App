@@ -80,7 +80,7 @@ export default function Result() {
       <div className="mt-5">
         <button
           onClick={handleBackToCategories}
-          className="bg-blue-500 text-white p-2 rounded-lg"
+          className="bg-blue-500 text-white pl-10 pr-10 pt-5 pb-5  rounded-lg  justify-center text-center"
         >
           Back to Home
         </button>

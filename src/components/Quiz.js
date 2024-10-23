@@ -110,15 +110,17 @@ export default function Quiz() {
 
   return (
     <>
-      <div className="flex flex-row absolute top-0 mt-2 right-0 p-2 text-xl md:text-2xl gap-5 bg-yellow-600 rounded-2xl mr-5">
+      <div className="flex flex-row absolute top-0 mt-2 md:mt-5 mb-10 right-0 p-2 text-xl md:text-2xl gap-5 bg-yellow-600 rounded-2xl mr-5">
         <img
-          className=" pt-1 justify-center items-center h-6 w-5"
+          className=" md:mt-1 md:mb-1 ml-1 justify-center items-center h-auto w-7 md:w-6 "
           src="\images\coin-icon-3826.jpg"
           alt=""
         />
-        <div className="text-center justify-center items-center">{score}</div>
+        <div className="text-center justify-center items-center mr-1">
+          {score}
+        </div>
       </div>
-      <div className="bg-yellow-300 h-screen flex flex-col justify-center items-center p-4 pt-10 md:p-10">
+      <div className="bg-yellow-300 min-h-screen max-h-auto flex flex-col justify-center items-center p-4 pt-16 md:p-10">
         {currentQuestionIndex < questions.length ? (
           <div className="flex flex-col justify-center items-center gap-5 border-8 border-white-500 rounded-lg p-5 bg-yellow-400 w-full md:w-2/3 lg:w-1/2">
             <div className="pt-2 text-lg md:text-xl">

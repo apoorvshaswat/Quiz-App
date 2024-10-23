@@ -24,8 +24,8 @@ export default function Timer() {
 
   return (
     <div className="bg-yellow-300 flex flex-col justify-center items-center h-screen gap-10">
-      <div className="text-5xl">Quiz Starts In</div>
-      <div className="text-3xl">{time}</div>
+      <div className="md:text-5xl text-4xl">Quiz Starts In</div>
+      <div className="md:text-3xl text-2xl">{time}</div>
     </div>
   );
 }

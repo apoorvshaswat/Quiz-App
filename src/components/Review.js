@@ -61,7 +61,7 @@ export default function Review() {
           </div>
         ))}
         <button
-          className="mt-5 h-12 w-full max-w-xs border border-white bg-yellow-300 p-2 rounded-lg text-center hover:bg-yellow-400 transition"
+          className="mt-5 h-12 w-full  border border-white bg-yellow-300 p-2 rounded-lg text-center hover:bg-yellow-400 transition"
           onClick={handleQuizSelect}
         >
           Back to Result
